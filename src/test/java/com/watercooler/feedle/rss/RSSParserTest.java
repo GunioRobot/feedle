@@ -20,7 +20,7 @@ public class RSSParserTest extends TestCase
         InputStream inputStream = getClass().getResourceAsStream(RSS2_SAMPLE);
         FeedParser feedParser = new RSSParser();
         Feed feed = feedParser.parse(inputStream);
-        
+
         assertEquals("Liftoff News", feed.getTitle());
         assertEquals("Liftoff to Space Exploration.", feed.getDescription());
         assertEquals("en-us", feed.getLanguage());
